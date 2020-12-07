@@ -17,10 +17,10 @@ class Home extends Component {
           <img className="back" src={beauty} alt="beauty" height={600} width={1000}/> 
           <BookingLink>
 
-          <NavLink to="/book"><button class='btn'>Book Now</button></NavLink>
-          <div className="content">
-            <Route path="/book" component={Book}/>
-          </div>
+            <NavLink to="/book"><button class='btn'>Book Now</button></NavLink>
+            <div className="content">
+              <Route path="/book" component={Book}/>
+            </div>
            
           </BookingLink>       
           

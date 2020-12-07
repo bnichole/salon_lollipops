@@ -11,24 +11,34 @@ ul.header li {
   list-style-type: none;
   margin: 0;
   color: white;
+  font-size: xx-large;
   
 }
 ul.header li.logo {  
   color: white;  
   font-size: xx-large;
+  font-weight: bold;
   float: left;
+  
+  
+}
+ul.header {
+  height: 37px;
   text-align: center;
 }
 
+ul.header li.book-nav {
+  display: none;
+}
 ul.header {
   background-color: #762054;
-  padding: 40px;
+  padding: 10px;
 }
 ul.header li a {
   color: #FFF;
-  font-weight: bold;
+  
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
   
 }
 .content {

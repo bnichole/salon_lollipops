@@ -5,6 +5,14 @@ import blowout from './Images/blowout.png';
 import cut from './Images/cut.png';
 import flatiron from './Images/flatiron.png';
 import color from './Images/color.png';
+import { HashRouter as BookServices } from "react-router-dom";
+
+import {
+  Route,
+  NavLink,
+  ServicesHashRouter
+} from "react-router-dom";
+import Book from "./Book";
  
 class Services extends Component {
   render() {
@@ -50,13 +58,24 @@ class Services extends Component {
             <p className="cost">$45.00</p>
           </div>           
         </div>
+        <div className="footer">
+          <BookServices>
+            <NavLink to="/book"><button class='btn'>Book Now</button></NavLink>
+            <br></br>                 
+            <p>Icons made by Freepik from www.flaticon.com</p> 
+            <div className="content">
+              <Route path="/book" component={Book}/>
+            </div>           
+            </BookServices> 
+        </div>
+          
 
-        <div className="footer"> 
+        {/* <div className="footer"> 
         <button>Book Now</button>
         <br></br>                 
         <p>Icons made by Freepik from www.flaticon.com</p> 
         
-        </div>
+        </div> */}
 
       </div>
     );

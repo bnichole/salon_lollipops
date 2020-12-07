@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
-//import './App.css';
+//import Navbar from 'react-bootstrap/Navbar';
+//import Nav from 'react-bootstrap/Nav';
+
 
 import {
   Route,
@@ -17,11 +18,26 @@ import About from "./About";
 class Main extends Component {
 render() {
   return (
+  //   <div>
+  //     <Navbar bg="light" expand="lg">
+  //     <Navbar.Brand href="#home">The Salon at Lollipops</Navbar.Brand>
+  //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  //     <Navbar.Collapse id="basic-navbar-nav">
+  //       <Nav className="mr-auto">
+  //         <Nav.Link href="#home">Home</Nav.Link>
+  //         <Nav.Link href="#services">Services</Nav.Link>
+  //         <Nav.Link href="#contact">Contact</Nav.Link>
+  //         <Nav.Link href="#about">About</Nav.Link>
+  //       </Nav>        
+  //     </Navbar.Collapse>
+  //   </Navbar>
+  // </div>
+
       <HashRouter>
           <div>          
           <ul className="header">
               <li className="logo">The Salon at Lollipops</li>
-              <li><NavLink to="/book">Book</NavLink></li>
+              <li className="book-nav"><NavLink to="/book">Book</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>
               <li><NavLink to="/services">Services</NavLink></li>
