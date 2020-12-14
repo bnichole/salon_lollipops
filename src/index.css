@@ -43,6 +43,8 @@ ul.header li a {
 }
 .content {
   background-color: #FFF;
+  height: auto;
+  width: 100%;
   
 }
 .content h2 {
@@ -151,6 +153,7 @@ ul.header li a {
 
 .services h1 {
   text-align: center;
+  font-size: xxx-large;
 }
 
 .services .grid-container {
@@ -201,11 +204,107 @@ ul.header li a {
   padding: 15px 32px;
 }
 
-.book h2 {
+.book h1 {
   text-align: center;
 }
 
-.contact h2 {
+.book .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.book .row h2{
+  text-align: left;
+  color: #762054;
+  padding-left: 10%;
+  padding-bottom: 2%;
+}
+
+.book .vl {
+  border-left: 2px solid #762054;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 30%;
+}
+
+.book input {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #762054;
+  color: black;
+  
+}
+
+.book input[type=button] {
+  width: 19.5%;
+  padding: 12px 20px;
+  margin: 8px 2px;
+  box-sizing: border-box;
+}
+
+.book .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  font-size: x-large;
+}
+
+.contact {
+  background-image: url(./Images/ContactPageBackground.jpg);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 800px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.contact h1 {
   text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: xxx-large;
+}
+
+.contact h3 {
+  display: inline-block;
+  color: #762054;
+  font-size: x-large;
+}
+
+.contact svg {
+  width: 30%;
+  padding: 10px;
+  display: inline;
+}
+
+
+.contact .footer .responsive {
+  width: 120px;
+  height: 120px;
+  vertical-align: middle;
+}
+
+.contact .footer {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-color: #762054;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+}
+
+.contact .footer .h2 {
+  color: white;
 }
 

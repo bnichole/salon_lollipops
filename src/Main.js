@@ -37,7 +37,7 @@ render() {
           <div>          
           <ul className="header">
               <li className="logo">The Salon at Lollipops</li>
-              <li className="book-nav"><NavLink to="/book">Book</NavLink></li>
+              <li className="book"><NavLink to="/book">Book</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>
               <li><NavLink to="/services">Services</NavLink></li>
